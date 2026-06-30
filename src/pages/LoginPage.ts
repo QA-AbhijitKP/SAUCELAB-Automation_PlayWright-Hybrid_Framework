@@ -1,4 +1,5 @@
-import {Page, Locator} from '@playwright/test'
+import {Page, Locator, expect} from '@playwright/test';
+import { ProductPage } from './ProductPage';
 
 export class LoginPage{
 
@@ -20,13 +21,32 @@ export class LoginPage{
         await this.page.goto('');
     }
 
-    async login(user: string, pass: string){
-        await this.username.fill(user);
-        await this.password.fill(pass);
+    async verifyCurrentURL(expectedURL: string){
+        await expect(this.page).toHaveURL(expectedURL);
+
+    }
+
+    async verifyPageTitle(expectedpageTitle: string){
+        await expect(this.page).toHaveTitle(expectedpageTitle);
+    }
+
+   
+    async login(Username: string, Password: string){
+        await this.username.fill(Username);
+        await this.password.fill(Password);
         await this.loginButton.click();
     }
 
-    async verifyLoginSuccess(){
-    await this.page.waitForURL('https://www.saucedemo.com/inventory.html');
+    
+    async verifyLoginSuccess() {
+        await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
+        return new ProductPage(this.page);
+
     }
+
+    async verifyInvalidLogin(expectedError: string) {
+        await expect(this.errorMessage).toHaveText(expectedError);
+
+    }
+    
 }
