@@ -84,6 +84,10 @@ export class ProductPage{
     }
 
 //-----------------------------------------------------------------------------------------------------------------------
+    async verifyCurrentURL(expectedURL: string){
+        const actualURL = this.page.url();
+        expect(actualURL).toBe(expectedURL);
+    }
     
     async addProduct(productId: string) {
 

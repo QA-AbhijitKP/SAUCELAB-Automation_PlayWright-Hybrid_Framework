@@ -2,19 +2,22 @@ import {Page, Locator, expect} from '@playwright/test';
 import { ProductPage } from './ProductPage';
 
 export class LoginPage{
+    
 
     readonly page: Page;
     readonly username: Locator;
     readonly password: Locator;
     readonly loginButton: Locator;
-    readonly errorMessage: Locator;
+    readonly errorMessageInvalidCredetials: Locator;
+    readonly errorMessageEmptyCredentials: Locator;
 
     constructor(page: Page){
         this.page = page;
         this.username = page.locator('#user-name');
         this.password = page.locator('#password');
         this.loginButton = page.locator('#login-button');
-        this.errorMessage = page.locator('[data-test="error"]');
+        this.errorMessageInvalidCredetials = page.locator('[data-test="error"]');
+        this.errorMessageEmptyCredentials = page.locator(':text("Epic sadface: Username is required")');
     }
 
     async gotoLoginPage(){
@@ -45,7 +48,12 @@ export class LoginPage{
     }
 
     async verifyInvalidLogin(expectedError: string) {
-        await expect(this.errorMessage).toHaveText(expectedError);
+        await expect(this.errorMessageInvalidCredetials).toHaveText(expectedError);       
+
+    }
+
+    async verifyEmptyLogin(expectedError: string) {        
+        await expect(this.errorMessageEmptyCredentials).toHaveText(expectedError);
 
     }
     
