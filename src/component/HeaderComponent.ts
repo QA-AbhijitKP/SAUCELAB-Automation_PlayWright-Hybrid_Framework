@@ -17,7 +17,7 @@ export class HeaderComponent{
     constructor(page: Page){
         this.page = page;
         
-        this.logoText = page.locator('div').filter({ hasText: 'Swag Labs' }).first();
+        this.logoText = page.locator('div.app_logo');
         this.shoppingCartIcon= page.locator('a.shopping_cart_link:visible');  
         this.numberOnCartIcon = page.locator('span.shopping_cart_badge');
 
@@ -26,7 +26,7 @@ export class HeaderComponent{
 //--------------------------------------------------------------------------------------------------------------------------
 
 
-    async verifytheLogo(expectedText:string){
+    async verifyLogo(expectedText:string){
         await expect(this.logoText).toHaveText(expectedText);
 
     }
@@ -34,27 +34,28 @@ export class HeaderComponent{
 //--------------------------------------------------------------------------------------------------------------------------
 
 
-    async OpentheCart(){
+    async openCart(){
         await this.shoppingCartIcon.click();
         
     }
 
     
+    
     async getCartCount(): Promise<number> {
         
         if (!(await this.numberOnCartIcon.isVisible())) {
-            return 0;
+                return 0;
+            }
+
+            const countText = await this.numberOnCartIcon.textContent();
+            return Number(countText?.trim() ?? '0');
         }
 
-        const countText = await this.numberOnCartIcon.textContent();
-        return Number(countText);
-
-    }
-
-    async VerifycountOnCart(expectedCount: number) {
-        expect(this.numberOnCartIcon).toHaveText(expectedCount.toString());
-
-    }
+        async verifyCountOnCart(expectedCount: number) {
+            await expect(this.numberOnCartIcon).toHaveText(
+                expectedCount.toString()
+            );
+        }
 
 
 

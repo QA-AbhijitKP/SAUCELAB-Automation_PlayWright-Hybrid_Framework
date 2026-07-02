@@ -16,22 +16,19 @@ export class YourCartPage{
     readonly tShirtRed: Locator;
 
 
-
-
-
     constructor(page: Page){
         this.page= page;
-        this.pageName= page.getByText('Your Cart', { exact: true });
+        this.pageName= page.locator('span.title');
+
         this.continueShoppingButton= page.getByText('Continue Shopping');
         this.checkoutButton= page.getByText('Checkout');
+
         this.backpack= page.getByText('Sauce Labs Backpack');
         this.bikeLight= page.getByText('Sauce Labs Bike Light');
         this.boltTShirt= page.getByText('Sauce Labs Bolt T-Shirt');
         this.fleeceJacket= page.getByText('Sauce Labs Fleece Jacket');
         this.onesie= page.getByText('Sauce Labs Onesie');
-        this.tShirtRed= page.getByText('Test.allTheThings() T-Shirt (Red)');
-
-
+        this.tShirtRed= page.getByText('Test.allTheThings() T-Shirt (Red)');    
 
     }
 
@@ -58,17 +55,37 @@ export class YourCartPage{
     // Product Actions: Generic Method
 
     async verifyProductDisplayed(productName: string) {
-        await expect(this.page.getByText(productName)).toBeVisible();
+
+        // Map of product names to their corresponding locators
+        const productMap: Record<string, Locator> = {
+            'sauce-labs-backpack': this.page.locator('a[id="item_4_title_link"] div.inventory_item_name'),
+            'sauce-labs-bike-light': this.page.locator('a[id="item_0_title_link"] div.inventory_item_name'),
+            'sauce-labs-bolt-t-shirt': this.page.locator('a[id="item_1_title_link"] div.inventory_item_name'),
+            'sauce-labs-fleece-jacket': this.page.locator('a[id="item_5_title_link"] div.inventory_item_name'),
+            'sauce-labs-onesie': this.page.locator('a[id="item_2_title_link"] div.inventory_item_name'),
+            'test.allthethings()-t-shirt-(red)': this.page.locator('a[id="item_3_title_link"] div.inventory_item_name')
+        };
+        //await expect(productMap[productName]).toBeVisible();
+        
+        const locator = productMap[productName];
+
+        if (!locator) {
+            throw new Error(`Unknown product: ${productName}`);
+        }
+
+        await expect(locator).toBeVisible();
+
     }
+
 
     async removeProduct(productName: string) {
         const productMap: Record<string, string> = {
-            backPack: 'remove-sauce-labs-backpack',
-            bikeLight: 'remove-sauce-labs-bike-light',
-            boltTShirt: 'remove-sauce-labs-bolt-t-shirt',
-            fleeceJacket: 'remove-sauce-labs-fleece-jacket',
-            onesie: 'remove-sauce-labs-onesie',
-            TShirtRed: 'remove-test.allthethings()-t-shirt-(red)'
+            'sauce-labs-backpack': 'remove-sauce-labs-backpack',
+            'sauce-labs-bike-light': 'remove-sauce-labs-bike-light',
+            'sauce-labs-bolt-t-shirt': 'remove-sauce-labs-bolt-t-shirt',
+            'sauce-labs-fleece-jacket': 'remove-sauce-labs-fleece-jacket',
+            'sauce-labs-onesie': 'remove-sauce-labs-onesie',
+            'test.allthethings()-t-shirt-(red)': 'remove-test.allthethings()-t-shirt-(red)'
         };
 
         const selectorName = productMap[productName];

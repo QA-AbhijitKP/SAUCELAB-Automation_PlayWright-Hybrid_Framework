@@ -1,16 +1,24 @@
 import {Page, Locator, expect} from '@playwright/test';
 import { CheckoutCompletePage } from './CheckoutCompletePage';
 import { CheckoutYourInformationPage } from './CheckoutYourInformationPage';
+import { ProductPage } from './ProductPage';
 
 export class CheckoutOverviewPage{
 
     readonly page: Page;
     readonly pageName: Locator;
+    
     readonly paymentInfo: Locator;
+    readonly paymentInfoValue: Locator;
     readonly shippingInfo: Locator;
+    readonly shippingInfoValue: Locator;
     readonly itemCost: Locator;
-    readonly TaxCost: Locator;
+    //readonly itemCostValue: Locator;
+    readonly taxCost: Locator;
+    //readonly taxCostValue: Locator;
     readonly totalCost: Locator;
+    //readonly totalCostValue: Locator;
+    
     readonly cancelButton: Locator;
     readonly finishButton: Locator;
 
@@ -18,82 +26,101 @@ export class CheckoutOverviewPage{
 
     constructor(page: Page){
         this.page= page;
-        this.pageName= page.locator('span').filter({ hasText: 'Checkout: Overview' });
-        this.paymentInfo= page.locator('[data-test="payment-info-value"]');
-        this.shippingInfo= page.locator('[data-test="shipping-info-value"]');
-        this.itemCost=page.locator('div.summary_subtotal_label:visible');
-        this.TaxCost= page.locator('div.summary_tax_label:visible');
-        this.totalCost= page.locator('div.summary_total_label:visible');
-        this.cancelButton= page.locator('button').filter({ hasText: 'Cancel' });
-        this.finishButton= page.locator('button').filter({ hasText: 'Finish' });
+        this.pageName= page.locator('[data-test="title"]');  
+        
+        this.paymentInfo = page.locator('[data-test="payment-info-label"]');
+        this.paymentInfoValue= page.locator('[data-test="payment-info-value"]');
 
+        this.shippingInfo = page.locator('[data-test="shipping-info-label"]');
+        this.shippingInfoValue= page.locator('[data-test="shipping-info-value"]');
 
+        this.itemCost = page.locator('[data-test="subtotal-label"]');
+        //this.itemCostValue= page.locator('[data-test="subtotal-value"]');
+
+        this.taxCost = page.locator('[data-test="tax-label"]');
+        //this.taxCostValue= page.locator('[data-test="tax-value"]');
+
+        this.totalCost = page.locator('[data-test="total-label"]');
+        //this.totalCostValue= page.locator('[data-test="total-value"]');
+
+        
+        
+        this.cancelButton= page.locator('[data-test="cancel"]');
+        this.finishButton= page.locator('[data-test="finish"]');
 
     }
+
     async verifyPageName(expectedName:string){
-        expect(this.pageName).toHaveText(expectedName);
+        await expect(this.pageName).toHaveText(expectedName);
 
     }
-
-    async verifyCurrentURL(expectedURL:string){
-        const actualURL = this.page.url();
-        expect(actualURL).toBe(expectedURL);
+    
+    async verifyCurrentURL(expectedURL: string) {
+        await expect(this.page).toHaveURL(expectedURL);
     }
-
     
     async verifyPaymentInfoDisplayed(){
         await expect(this.paymentInfo).toBeVisible();
+        await expect(this.paymentInfoValue).toBeVisible();
     }
 
     async verifyShippingInfoDisplayed(){
         await expect(this.shippingInfo).toBeVisible();
+        await expect(this.shippingInfoValue).toBeVisible();
     }
 
     async verifyCostDetailsDisplayed(){
         await expect(this.itemCost).toBeVisible();
-        await expect(this.TaxCost).toBeVisible();
-        await expect(this.totalCost).toBeVisible();
-    }
-    
-    
-    
-    async verifyTotalAmount() {
         
-    const itemTotalText = await this.itemCost.textContent();
-    const taxText = await this.TaxCost.textContent();
-    const totalText = await this.totalCost.textContent();
-
-    const itemTotal = this.getAmount(itemTotalText ?? '');
-    const tax = this.getAmount(taxText ?? '');
-    const total = this.getAmount(totalText ?? '');
-
-    expect(total).toBe(itemTotal + tax);
-}
-   
-    private getAmount(text: string): number {
-        // Extract the first number (with optional currency symbol) and parse as float
-        const match = text.match(/-?\d{1,3}(?:[,\s]\d{3})*(?:\.\d+)?|-?\d+\.\d+/);
-        if (!match) return 0;
-        // Remove commas and spaces, then parse
-        const normalized = match[0].replace(/[,\s]/g, '');
-        const value = parseFloat(normalized);
-        return Number.isNaN(value) ? 0 : value;
+        await expect(this.taxCost).toBeVisible();
+        
+        await expect(this.totalCost).toBeVisible();
+        
     }
+    
+    
+    
+
+    async validateTotalCost() {
+        // Extract values from UI
+        const itemTotalText = await this.page.locator('[data-test="subtotal-label"]').textContent();
+        const taxText = await this.page.locator('[data-test="tax-label"]').textContent();
+        const totalText = await this.page.locator('[data-test="total-label"]').textContent();
+
+        // Remove text and convert to numbers
+        const itemTotal = Number(itemTotalText?.replace('Item total: $', ''));
+        const tax = Number(taxText?.replace('Tax: $', ''));
+        const actualTotal = Number(totalText?.replace('Total: $', ''));
+
+        // Calculate expected total
+        const expectedTotal = itemTotal + tax;
+
+        // Validate
+        expect(actualTotal).toBeCloseTo(expectedTotal, 2);
+
+        console.log(`Item Total: ${itemTotal}`);
+        console.log(`Tax: ${tax}`);
+        console.log(`Expected Total: ${expectedTotal}`);
+        console.log(`Actual Total: ${actualTotal}`);
+    }
+
 
     // Navigate pages
 
-    async navigateToCheckoutCompletePage(){
+    
+    async navigateToCheckoutCompletePage() {
         await expect(this.finishButton).toBeVisible();
         await this.finishButton.click();
-        return new CheckoutYourInformationPage(this.page);
-        
+
+        return new CheckoutCompletePage(this.page);
     }
 
-    async navigateToCheckoutYourInformationPage(){
+
+    async clickCancelButton(){
         
         await expect(this.cancelButton).toBeVisible();
         await this.cancelButton.click();
-        return new CheckoutCompletePage(this.page);
+        return new ProductPage(this.page);
         
     }
 
@@ -101,3 +128,5 @@ export class CheckoutOverviewPage{
 
 
 }
+
+// npx playwright test tests/Debug.spec.ts --project=chromium --debug

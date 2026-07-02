@@ -16,11 +16,11 @@ export class CheckoutYourInformationPage{
     constructor(page: Page){
         this.page= page;
         this.pageName= page.getByText('Checkout: Your Information');
-        this.firstName= page.locator('input[name="firstName"]');
-        this.lastName= page.locator('input[name="lastName"]');
-        this.zipCode= page.locator('input[name="postalCode"]')
+        this.firstName= page.locator('[data-test="firstName"]');
+        this.lastName= page.locator('[data-test="lastName"]');
+        this.zipCode= page.locator("//input[@id='postal-code']");
         this.cancelButton= page.getByText('Cancel');
-        this.continueButton= page.locator('input[name="continue"]');
+        this.continueButton= page.locator("//input[@id='continue']");
     }
 
     async verifyPageName(expectedText: string){
@@ -32,11 +32,34 @@ export class CheckoutYourInformationPage{
         await expect(this.page).toHaveURL(expectedURL);
     }
 
-    async fillInformation(FirstName: string, LastName: string, ZIPCode: string){
-        this.firstName.fill(FirstName);
-        this.lastName.fill(LastName);
-        this.zipCode.fill(ZIPCode);
+   
+    async fillUserDetails(   
+        firstName: string,
+        lastName: string,
+        zipCode: string
+    ) {
+        await this.firstName.click();
+        await this.page.keyboard.type(firstName);
+        await this.page.waitForTimeout(2000); // Wait for 1 second
+
+        await this.page.keyboard.press('Tab');
+        await this.page.keyboard.type(lastName);
+       
+        await this.page.keyboard.press('Tab');
+        await this.page.keyboard.type(zipCode);
+        
     }
+
+
+    //------------------------------------
+
+    
+    async verifyAllFieldsHaveValue() {
+        await expect(this.firstName).toHaveValue(/.+/);
+        await expect(this.lastName).toHaveValue(/.+/);
+        await expect(this.zipCode).toHaveValue(/.+/);
+    }
+
 
      // Navigation
      
@@ -52,9 +75,11 @@ export class CheckoutYourInformationPage{
     async clickContinueButton(){
         await expect(this.continueButton).toBeVisible();
         await this.continueButton.click();
-        return new CheckoutOverviewPage(this.page);
+        await this.page.waitForURL('**/checkout-step-two.html');
         
     }
 
 
 }
+
+//npx playwright test tests/end2EndTest.spe

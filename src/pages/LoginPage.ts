@@ -1,4 +1,4 @@
-import {Page, Locator, expect} from '@playwright/test';
+import {Page, Locator, expect, chromium} from '@playwright/test';
 import { ProductPage } from './ProductPage';
 
 export class LoginPage{

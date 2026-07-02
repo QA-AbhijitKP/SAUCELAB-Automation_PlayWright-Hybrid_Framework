@@ -4,6 +4,7 @@ import {Page, Locator, expect} from '@playwright/test'
 export class ProductPage{
 
     readonly page: Page;
+    readonly pageName: Locator;
 
     // Sort the Products
     readonly sortProductButton: Locator;
@@ -53,6 +54,8 @@ export class ProductPage{
 
     constructor(page: Page){
         this.page = page;
+
+        this.pageName= page.locator('[data-test="title"]');
         
         this.sortProductButton= page.locator('select.product_sort_container');
                        
@@ -84,11 +87,15 @@ export class ProductPage{
     }
 
 //-----------------------------------------------------------------------------------------------------------------------
+    async verifyPageTitle(expectedpageTitle: string){
+        await expect(this.pageName).toHaveText(expectedpageTitle);
+    }
+
     async verifyCurrentURL(expectedURL: string){
         const actualURL = this.page.url();
         expect(actualURL).toBe(expectedURL);
     }
-    
+
     async addProduct(productId: string) {
 
         const addButton= this.page.locator(`[name="add-to-cart-${productId}"]`);
@@ -101,8 +108,6 @@ export class ProductPage{
 
         await addButton.click();
     }
-
-
 
     async removeProduct(productId: string) {
 

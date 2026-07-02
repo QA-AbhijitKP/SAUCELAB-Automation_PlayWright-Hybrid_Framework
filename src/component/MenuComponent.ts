@@ -29,40 +29,24 @@ export class MenuComponent{
     //--------------------------------------------------------------------------------------------------------------------------
 
     
-    async openMenu() {
-
-        await this.hamburgerIcon.click();
-    }
-
-
     async clickAllItemsOption(){
-
-        await this.openMenu();
+        await this.hamburgerIcon.click();
         await this.allItemsOption.click();
-
-
     }
 
     async clickAboutOption(){
-
-        await this.openMenu();
+        await this.hamburgerIcon.click();
         await this.aboutOption.click();
-
     }
 
     async clickLogoutOption(){
-
-        await this.openMenu();
+        await this.hamburgerIcon.click();
         await this.logoutOption.click();
-
-
     }
 
     async clickResetAppStateOption() {
-
-        await this.openMenu();
+        await this.hamburgerIcon.click();
         await this.resetAppStateOption.click();
-
     }
 
 
