@@ -1,11 +1,11 @@
 import { expect, test } from '@playwright/test';
 import { LoginPage } from '../pages/LoginPage';
-
+const URL = process.env.URL!;
 test('login page Validation', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     
@@ -19,7 +19,7 @@ test('login Test with valid Credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     await loginPage.verifyPageTitle("Swag Labs");
@@ -39,7 +39,7 @@ test('login Test with invalid Credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     await loginPage.verifyPageTitle("Swag Labs");
@@ -59,7 +59,7 @@ test('login Test with invalid Username', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     await loginPage.verifyPageTitle("Swag Labs");
@@ -80,7 +80,7 @@ test('login Test with invalid Password', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     await loginPage.verifyPageTitle("Swag Labs");
@@ -99,7 +99,7 @@ test('login Test with empty credentials', async ({ page }) => {
     const loginPage = new LoginPage(page);
     
     // Navigate to login Page
-    await loginPage.gotoLoginPage();
+    await loginPage.gotoLoginPage(URL);
 
     //Verify the page title and current URL
     await loginPage.verifyPageTitle("Swag Labs");

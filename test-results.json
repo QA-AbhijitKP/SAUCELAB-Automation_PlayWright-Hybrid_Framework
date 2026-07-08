@@ -1,6 +1,12 @@
 {
   "config": {
-    "argv": [],
+    "argv": [
+      "C:\\Program Files\\nodejs\\node.exe",
+      "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\node_modules\\@playwright\\test\\cli.js",
+      "test",
+      "tests/dataDrivenTest.spec.ts",
+      "--workers=5"
+    ],
     "configFile": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\playwright.config.ts",
     "rootDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
     "failOnFlakyTests": false,
@@ -13,16 +19,16 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 1
+      "actualWorkers": 5
     },
     "preserveOutput": "always",
     "projects": [
       {
         "outputDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/test-results",
         "repeatEach": 1,
-        "retries": 0,
+        "retries": 1,
         "metadata": {
-          "actualWorkers": 1
+          "actualWorkers": 5
         },
         "id": "chrome",
         "name": "chrome",
@@ -72,20 +78,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "3way",
+    "updateSourceMethod": "patch",
     "version": "1.61.0",
-    "workers": 1,
+    "workers": 5,
     "webServer": null
   },
   "suites": [
     {
-      "title": "end2EndTest.spec.ts",
-      "file": "end2EndTest.spec.ts",
+      "title": "dataDrivenTest.spec.ts",
+      "file": "dataDrivenTest.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Sauce Lab: End to End Test",
+          "title": "login Test with valid Credentials",
           "ok": true,
           "tags": [],
           "tests": [
@@ -100,307 +106,543 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 34978,
+                  "duration": 61054,
                   "errors": [],
                   "stdout": [
                     {
-                      "text": "2026-07-08 00:34:21 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                      "text": "2026-07-09 00:47:07 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:27 [INFO] Successfully launched application\r\n"
+                      "text": "2026-07-09 00:47:36 [INFO] Successfully launched application\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:27 [INFO] Entering Username: standard_user\r\n"
+                      "text": "2026-07-09 00:47:36 [INFO] Verifying Page Title: Swag Labs\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:28 [INFO] Entering Password\r\n"
+                      "text": "2026-07-09 00:47:37 [INFO] Page title verification passed\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:29 [INFO] Clicking Login Button\r\n"
+                      "text": "2026-07-09 00:47:37 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Login button clicked\r\n"
+                      "text": "2026-07-09 00:47:37 [INFO] URL verification passed\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Verifying successful login\r\n"
+                      "text": "2026-07-09 00:47:37 [INFO] Entering Username: error_user\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Login successful\r\n"
+                      "text": "2026-07-09 00:47:38 [INFO] Entering Password\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Verifying Product Page Title: Products\r\n"
+                      "text": "2026-07-09 00:47:39 [INFO] Clicking Login Button\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Product Page Title verification passed\r\n"
+                      "text": "2026-07-09 00:47:41 [INFO] Login button clicked\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html\r\n"
+                      "text": "Username:error_user Password:secret_sauce\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Product Page URL verification passed\r\n"
+                      "text": "2026-07-09 00:47:41 [INFO] Verifying successful login\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:30 [INFO] Attempting to add product: sauce-labs-backpack\r\n"
+                      "text": "2026-07-09 00:47:41 [INFO] Login successful\r\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:31 [INFO] Product added successfully: sauce-labs-backpack\r\n"
+                      "text": "Login was successful with valid credentials\n"
                     },
                     {
-                      "text": "2026-07-08 00:34:31 [INFO] Attempting to add product: sauce-labs-bike-light\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:32 [INFO] Product added successfully: sauce-labs-bike-light\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:32 [INFO] Attempting to add product: sauce-labs-bolt-t-shirt\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:34 [INFO] Product added successfully: sauce-labs-bolt-t-shirt\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:34 [INFO] Attempting to add product: sauce-labs-fleece-jacket\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:35 [INFO] Product added successfully: sauce-labs-fleece-jacket\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:35 [INFO] Attempting to add product: sauce-labs-onesie\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:36 [INFO] Product added successfully: sauce-labs-onesie\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:36 [INFO] Attempting to add product: test.allthethings()-t-shirt-(red)\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:37 [INFO] Product added successfully: test.allthethings()-t-shirt-(red)\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:37 [INFO] Verifying Cart Count: 6\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:37 [INFO] Cart Count verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:37 [INFO] Opening Shopping Cart\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Shopping Cart opened successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying Cart Page Title: Your Cart\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Cart Page Title verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying Cart Page URL: https://www.saucedemo.com/cart.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Cart Page URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-backpack\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-backpack\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bike-light\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bike-light\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bolt-t-shirt\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bolt-t-shirt\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-fleece-jacket\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-fleece-jacket\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-onesie\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-onesie\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: test.allthethings()-t-shirt-(red)\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: test.allthethings()-t-shirt-(red)\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:38 [INFO] Clicking Checkout button\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Navigated to Checkout Information Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Verifying Page Name: Checkout: Your Information\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Checkout Information Page Name verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Verifying URL: https://www.saucedemo.com/checkout-step-one.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Checkout Information URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] Entering Checkout Information\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:40 [INFO] First Name: Abhijit\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:43 [INFO] Last Name: Patil\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:45 [INFO] Zip Code: 416516\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:46 [INFO] Checkout Information entered successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:46 [INFO] Verifying all checkout fields contain values\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:46 [INFO] All checkout fields contain valid values\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:46 [INFO] Clicking Continue Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Navigated to Checkout Overview Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Verifying Checkout Overview Page Name: Checkout: Overview\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Checkout Overview Page Name verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Verifying Checkout Overview URL: https://www.saucedemo.com/checkout-step-two.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Checkout Overview URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:47 [INFO] Verifying Payment Information section\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Payment Information displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Verifying Shipping Information section\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Shipping Information displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Verifying Cost Details section\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Cost Details displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Validating Total Cost\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Item Total: 129.94\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Tax: 10.4\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Expected Total: 140.34\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Actual Total: 140.34\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Total Cost validation passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:48 [INFO] Clicking Finish Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Navigated to Checkout Complete Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Verifying Checkout Complete Page Name: Checkout: Complete!\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Checkout Complete Page Name verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Verifying Checkout Complete URL: https://www.saucedemo.com/checkout-complete.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Checkout Complete URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Verifying Order Confirmation Messages\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Order Confirmation Messages verified successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:49 [INFO] Clicking Back Home Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Navigated back to Product Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Verifying Product Page Title: Products\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Product Page Title verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Product Page URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:50 [INFO] Opening Hamburger Menu\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:51 [INFO] Clicking Logout option\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:53 [INFO] Successfully logged out from application\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:53 [INFO] Verifying Page Title: Swag Labs\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:53 [INFO] Page title verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:53 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
-                    },
-                    {
-                      "text": "2026-07-08 00:34:53 [INFO] URL verification passed\r\n"
+                      "text": "Test Case Execution Pass successfully\n"
                     }
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-07T19:04:15.839Z",
+                  "startTime": "2026-07-08T19:16:48.151Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-4a274d36fd907518cbc1",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 9,
+          "column": 5
+        },
+        {
+          "title": "login Test with invalid Credentials",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 75771,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:47:00 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Entering Username: abhijit\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:39 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [INFO] Login button clicked\r\n"
+                    },
+                    {
+                      "text": "Username:abhijit Password:password\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [WARN] Verifying invalid login scenario\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [WARN] Expected Error Displayed: Epic sadface: Username and password do not match any user in this service\r\n"
+                    },
+                    {
+                      "text": "Login failed as expected with invalid credentials\n"
+                    },
+                    {
+                      "text": "Test Case Execution Pass successfully\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:16:46.784Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-dc13a6514fbbb9387620",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 37,
+          "column": 5
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- standard_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 70773,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:47:13 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Entering Username: standard_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:39 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:16:46.553Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-872de4edf07b39305281",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- locked_out_user",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 3,
+                  "parallelIndex": 3,
+                  "status": "failed",
+                  "duration": 88128,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nTimeout:  30000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    61 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nTimeout:  30000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    61 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:86:36",
+                    "location": {
+                      "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                      "column": 36,
+                      "line": 86
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m             \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m             \u001b[36mif\u001b[39m(data\u001b[33m.\u001b[39mexpected\u001b[33m===\u001b[39m\u001b[32m'success'\u001b[39m){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://www.saucedemo.com/inventory.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m             }\n \u001b[90m 88 |\u001b[39m             \u001b[36melse\u001b[39m{\n \u001b[90m 89 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                        "column": 36,
+                        "line": 86
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\nTimeout:  30000ms\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    61 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 84 |\u001b[39m             \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m             \u001b[36mif\u001b[39m(data\u001b[33m.\u001b[39mexpected\u001b[33m===\u001b[39m\u001b[32m'success'\u001b[39m){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://www.saucedemo.com/inventory.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m             }\n \u001b[90m 88 |\u001b[39m             \u001b[36melse\u001b[39m{\n \u001b[90m 89 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[0m\n\u001b[2m    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:86:36\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:47:07 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:36 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:37 [INFO] Entering Username: locked_out_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:39 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:16:47.951Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\end2EndTest-Sauce-Lab-End-to-End-Test-chrome\\test-finished-1.png"
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                    "column": 36,
+                    "line": 86
+                  }
+                },
+                {
+                  "workerIndex": 5,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 33801,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    31 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    31 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:86:36",
+                    "location": {
+                      "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                      "column": 36,
+                      "line": 86
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 84 |\u001b[39m             \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m             \u001b[36mif\u001b[39m(data\u001b[33m.\u001b[39mexpected\u001b[33m===\u001b[39m\u001b[32m'success'\u001b[39m){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://www.saucedemo.com/inventory.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m             }\n \u001b[90m 88 |\u001b[39m             \u001b[36melse\u001b[39m{\n \u001b[90m 89 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                        "column": 36,
+                        "line": 86
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mpage\u001b[39m\u001b[2m).\u001b[22mtoHaveURL\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nExpected: \u001b[32m\"https://www.saucedemo.com/\u001b[7minventory.html\u001b[27m\"\u001b[39m\nReceived: \u001b[31m\"https://www.saucedemo.com/\"\u001b[39m\n\nCall log:\n\u001b[2m  - Expect \"toHaveURL\" with timeout 30000ms\u001b[22m\n\u001b[2m    31 × unexpected value \"https://www.saucedemo.com/\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 84 |\u001b[39m             \u001b[36mawait\u001b[39m loginPage\u001b[33m.\u001b[39mlogin(data\u001b[33m.\u001b[39musername\u001b[33m,\u001b[39m data\u001b[33m.\u001b[39mpassword)\u001b[33m;\u001b[39m\n \u001b[90m 85 |\u001b[39m             \u001b[36mif\u001b[39m(data\u001b[33m.\u001b[39mexpected\u001b[33m===\u001b[39m\u001b[32m'success'\u001b[39m){\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 86 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(page)\u001b[33m.\u001b[39mtoHaveURL(\u001b[32m\"https://www.saucedemo.com/inventory.html\"\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 87 |\u001b[39m             }\n \u001b[90m 88 |\u001b[39m             \u001b[36melse\u001b[39m{\n \u001b[90m 89 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[0m\n\u001b[2m    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:86:36\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:49:16 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:21 [INFO] Entering Username: locked_out_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:22 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:23 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:25 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-07-08T19:19:10.682Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--79b10-alid-User---locked-out-user-chrome-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                    "column": 36,
+                    "line": 86
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-0f4014e2bffa0f72af68",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- problem_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 41982,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:47:22 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:38 [INFO] Entering Username: problem_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:39 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:40 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:47:41 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:16:49.266Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-e20bbd02b13f8bc6d16f",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- performance_glitch_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 31657,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:01 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Entering Username: performance_glitch_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:10 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:11 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:18 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:17:52.471Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--2e6bb-r---performance-glitch-user-chrome\\test-finished-1.png"
                     }
                   ]
                 }
@@ -408,21 +650,585 @@
               "status": "expected"
             }
           ],
-          "id": "a69ed6b45690ea2bcbab-47a4c5a751752c41e8b1",
-          "file": "end2EndTest.spec.ts",
-          "line": 12,
-          "column": 5
+          "id": "5b1be04d6d4e6c9ec92b-e7e7b883082064711268",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- error_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 23080,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:04 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:12 [INFO] Entering Username: error_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:13 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:14 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:16 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:01.860Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-5f1d085bc5885ce54552",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Valid User)- visual_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "passed",
+                  "duration": 35036,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:09 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:25 [INFO] Entering Username: visual_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:27 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:29 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:05.896Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--82bfb-st-Valid-User---visual-user-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-5eff6c234ea19a056ad8",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 72,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Invalid User)- User1",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 33005,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:11 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:26 [INFO] Entering Username: User1\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:27 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:28 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:30 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:08.567Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--c22af-n-Test-Invalid-User---User1-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-59b35e4885b7f487f84d",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 102,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Invalid User)- standard_user",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 4,
+                  "parallelIndex": 4,
+                  "status": "passed",
+                  "duration": 28129,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:29 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Entering Username: standard_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:42 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:43 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:44 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:25.167Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--04e69-nvalid-User---standard-user-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-60369b18149572184990",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 102,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Invalid User)- abhijit",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 25195,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:30 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:41 [INFO] Entering Username: abhijit\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:42 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:43 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:44 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:26.466Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--d1f34-Test-Invalid-User---abhijit-chrome\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-e8e1ed0ca8c52e5bba6b",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 102,
+          "column": 13
+        },
+        {
+          "title": "login page Validation: Dynamic Data Generation Test(Invalid User)- ",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 90000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chrome",
+              "projectName": "chrome",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
+                  "status": "failed",
+                  "duration": 53049,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n\n    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:119:71",
+                    "location": {
+                      "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                      "column": 71,
+                      "line": 119
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m             }\n \u001b[90m 118 |\u001b[39m             \u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Epic sadface: Username and password do not match any user in this service'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m             }\n \u001b[90m 122 |\u001b[39m               \u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                        "column": 71,
+                        "line": 119
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 117 |\u001b[39m             }\n \u001b[90m 118 |\u001b[39m             \u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Epic sadface: Username and password do not match any user in this service'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m             }\n \u001b[90m 122 |\u001b[39m               \u001b[0m\n\u001b[2m    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:119:71\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:48:47 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:54 [INFO] Entering Username: \r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:56 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:57 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:48:58 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-07-08T19:18:41.359Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome\\error-context.md"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                    "column": 71,
+                    "line": 119
+                  }
+                },
+                {
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
+                  "status": "failed",
+                  "duration": 52510,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n\n    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:119:71",
+                    "location": {
+                      "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                      "column": 71,
+                      "line": 119
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 117 |\u001b[39m             }\n \u001b[90m 118 |\u001b[39m             \u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Epic sadface: Username and password do not match any user in this service'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m             }\n \u001b[90m 122 |\u001b[39m               \u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                        "column": 71,
+                        "line": 119
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('[data-test=\"error\"]')\nExpected substring: \u001b[32m\"Epic sadface: Username \u001b[7mand password do not match any user in this service\u001b[27m\"\u001b[39m\nReceived string:    \u001b[31m\"Epic sadface: Username \u001b[7mis required\u001b[27m\"\u001b[39m\nTimeout: 30000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" with timeout 30000ms\u001b[22m\n\u001b[2m  - waiting for locator('[data-test=\"error\"]')\u001b[22m\n\u001b[2m    62 × locator resolved to <h3 data-test=\"error\">…</h3>\u001b[22m\n\u001b[2m       - unexpected value \"Epic sadface: Username is required\"\u001b[22m\n\n\n\u001b[0m \u001b[90m 117 |\u001b[39m             }\n \u001b[90m 118 |\u001b[39m             \u001b[36melse\u001b[39m{\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 119 |\u001b[39m                 \u001b[36mawait\u001b[39m expect(loginPage\u001b[33m.\u001b[39merrorMessageInvalidCredetials)\u001b[33m.\u001b[39mtoContainText(\u001b[32m'Epic sadface: Username and password do not match any user in this service'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                       \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 120 |\u001b[39m\n \u001b[90m 121 |\u001b[39m             }\n \u001b[90m 122 |\u001b[39m               \u001b[0m\n\u001b[2m    at C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts:119:71\u001b[22m"
+                    }
+                  ],
+                  "stdout": [
+                    {
+                      "text": "2026-07-09 00:49:46 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:52 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:52 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:53 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:53 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:53 [INFO] URL verification passed\r\n"
+                    },
+                    {
+                      "text": "Login Page Title and URL are verified successfully\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:53 [INFO] Entering Username: \r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:54 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:55 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-09 00:49:56 [INFO] Login button clicked\r\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 1,
+                  "startTime": "2026-07-08T19:19:37.795Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome-retry1\\test-failed-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome-retry1\\video.webm"
+                    },
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome-retry1\\error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\dataDrivenTest-login-page--a3b65-ration-Test-Invalid-User----chrome-retry1\\trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\src\\tests\\dataDrivenTest.spec.ts",
+                    "column": 71,
+                    "line": 119
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "5b1be04d6d4e6c9ec92b-4ca3a65e658e9e31f97d",
+          "file": "dataDrivenTest.spec.ts",
+          "line": 102,
+          "column": 13
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-07-07T19:04:10.453Z",
-    "duration": 43428.171,
-    "expected": 1,
+    "startTime": "2026-07-08T19:16:41.608Z",
+    "duration": 231968.44100000002,
+    "expected": 10,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 2,
     "flaky": 0
   }
 }

@@ -124,3 +124,195 @@
 2026-07-08 00:34:53 [INFO] Page title verification passed
 2026-07-08 00:34:53 [INFO] Verifying URL: https://www.saucedemo.com/
 2026-07-08 00:34:53 [INFO] URL verification passed
+2026-07-08 14:56:58 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 14:57:03 [INFO] Successfully launched application
+2026-07-08 14:57:03 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 14:57:03 [INFO] Page title verification passed
+2026-07-08 14:57:03 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 14:57:03 [INFO] URL verification passed
+2026-07-08 14:57:03 [INFO] Entering Username: standard_user
+2026-07-08 14:57:04 [INFO] Entering Password
+2026-07-08 14:57:05 [INFO] Clicking Login Button
+2026-07-08 14:57:06 [INFO] Login button clicked
+2026-07-08 14:57:06 [INFO] Verifying successful login
+2026-07-08 14:57:06 [INFO] Login successful
+2026-07-08 14:57:37 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 14:57:42 [INFO] Successfully launched application
+2026-07-08 14:57:42 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 14:57:42 [INFO] Page title verification passed
+2026-07-08 14:57:42 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 14:57:42 [INFO] URL verification passed
+2026-07-08 14:57:42 [INFO] Entering Username: performance_glitch_user
+2026-07-08 14:57:43 [INFO] Entering Password
+2026-07-08 14:57:44 [INFO] Clicking Login Button
+2026-07-08 14:57:50 [INFO] Login button clicked
+2026-07-08 14:57:50 [INFO] Verifying successful login
+2026-07-08 14:57:50 [INFO] Login successful
+2026-07-08 15:04:24 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 15:04:29 [INFO] Successfully launched application
+2026-07-08 15:04:29 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 15:04:29 [INFO] Page title verification passed
+2026-07-08 15:04:29 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 15:04:29 [INFO] URL verification passed
+2026-07-08 15:04:29 [INFO] Entering Username: error_user
+2026-07-08 15:04:30 [INFO] Entering Password
+2026-07-08 15:04:31 [INFO] Clicking Login Button
+2026-07-08 15:04:32 [INFO] Login button clicked
+2026-07-08 15:04:32 [INFO] Verifying successful login
+2026-07-08 15:04:32 [INFO] Login successful
+2026-07-08 15:04:34 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 15:04:35 [INFO] Successfully launched application
+2026-07-08 15:04:35 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 15:04:35 [INFO] Page title verification passed
+2026-07-08 15:04:35 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 15:04:35 [INFO] URL verification passed
+2026-07-08 15:04:35 [INFO] Entering Username: abhijit
+2026-07-08 15:04:36 [INFO] Entering Password
+2026-07-08 15:04:37 [INFO] Clicking Login Button
+2026-07-08 15:04:38 [INFO] Login button clicked
+2026-07-08 15:04:38 [WARN] Verifying invalid login scenario
+2026-07-08 15:04:38 [WARN] Expected Error Displayed: Epic sadface: Username and password do not match any user in this service
+2026-07-08 15:07:54 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 15:07:59 [INFO] Successfully launched application
+2026-07-08 15:07:59 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 15:07:59 [INFO] Page title verification passed
+2026-07-08 15:07:59 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 15:07:59 [INFO] URL verification passed
+2026-07-08 15:07:59 [INFO] Entering Username: error_user
+2026-07-08 15:08:00 [INFO] Entering Password
+2026-07-08 15:08:01 [INFO] Clicking Login Button
+2026-07-08 15:08:03 [INFO] Login button clicked
+2026-07-08 15:08:03 [INFO] Verifying successful login
+2026-07-08 15:08:03 [INFO] Login successful
+2026-07-08 15:08:06 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 15:08:10 [INFO] Successfully launched application
+2026-07-08 15:08:10 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 15:08:10 [INFO] Page title verification passed
+2026-07-08 15:08:10 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 15:08:10 [INFO] URL verification passed
+2026-07-08 15:08:10 [INFO] Entering Username: abhijit
+2026-07-08 15:08:11 [INFO] Entering Password
+2026-07-08 15:08:12 [INFO] Clicking Login Button
+2026-07-08 15:08:13 [INFO] Login button clicked
+2026-07-08 15:08:13 [WARN] Verifying invalid login scenario
+2026-07-08 15:08:13 [WARN] Expected Error Displayed: Epic sadface: Username and password do not match any user in this service
+2026-07-08 17:53:30 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:53:36 [INFO] Successfully launched application
+2026-07-08 17:53:36 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:53:36 [INFO] Page title verification passed
+2026-07-08 17:53:36 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:53:36 [INFO] URL verification passed
+2026-07-08 17:53:36 [INFO] Entering Username: standard_user
+2026-07-08 17:53:37 [INFO] Entering Password
+2026-07-08 17:53:38 [INFO] Clicking Login Button
+2026-07-08 17:53:39 [INFO] Login button clicked
+2026-07-08 17:54:08 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:54:13 [INFO] Successfully launched application
+2026-07-08 17:54:13 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:54:13 [INFO] Page title verification passed
+2026-07-08 17:54:13 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:54:13 [INFO] URL verification passed
+2026-07-08 17:54:13 [INFO] Entering Username: locked_out_user
+2026-07-08 17:54:14 [INFO] Entering Password
+2026-07-08 17:54:15 [INFO] Clicking Login Button
+2026-07-08 17:54:16 [INFO] Login button clicked
+2026-07-08 17:54:17 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:54:19 [INFO] Successfully launched application
+2026-07-08 17:54:19 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:54:19 [INFO] Page title verification passed
+2026-07-08 17:54:19 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:54:19 [INFO] URL verification passed
+2026-07-08 17:54:19 [INFO] Entering Username: problem_user
+2026-07-08 17:54:20 [INFO] Entering Password
+2026-07-08 17:54:21 [INFO] Clicking Login Button
+2026-07-08 17:54:22 [INFO] Login button clicked
+2026-07-08 17:54:54 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:54:56 [INFO] Successfully launched application
+2026-07-08 17:54:56 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:54:56 [INFO] Page title verification passed
+2026-07-08 17:54:56 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:54:56 [INFO] URL verification passed
+2026-07-08 17:54:56 [INFO] Entering Username: performance_glitch_user
+2026-07-08 17:54:58 [INFO] Entering Password
+2026-07-08 17:54:59 [INFO] Clicking Login Button
+2026-07-08 17:55:05 [INFO] Login button clicked
+2026-07-08 17:55:38 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:55:40 [INFO] Successfully launched application
+2026-07-08 17:55:40 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:55:40 [INFO] Page title verification passed
+2026-07-08 17:55:40 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:55:40 [INFO] URL verification passed
+2026-07-08 17:55:40 [INFO] Entering Username: error_user
+2026-07-08 17:55:41 [INFO] Entering Password
+2026-07-08 17:55:42 [INFO] Clicking Login Button
+2026-07-08 17:55:43 [INFO] Login button clicked
+2026-07-08 17:56:15 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 17:56:17 [INFO] Successfully launched application
+2026-07-08 17:56:17 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 17:56:17 [INFO] Page title verification passed
+2026-07-08 17:56:17 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 17:56:17 [INFO] URL verification passed
+2026-07-08 17:56:17 [INFO] Entering Username: visual_user
+2026-07-08 17:56:18 [INFO] Entering Password
+2026-07-08 17:56:19 [INFO] Clicking Login Button
+2026-07-08 17:56:20 [INFO] Login button clicked
+2026-07-08 18:00:16 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:00:20 [INFO] Successfully launched application
+2026-07-08 18:00:20 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:00:20 [INFO] Page title verification passed
+2026-07-08 18:00:20 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:00:20 [INFO] URL verification passed
+2026-07-08 18:00:20 [INFO] Entering Username: standard_user
+2026-07-08 18:00:21 [INFO] Entering Password
+2026-07-08 18:00:22 [INFO] Clicking Login Button
+2026-07-08 18:00:24 [INFO] Login button clicked
+2026-07-08 18:00:26 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:00:29 [INFO] Successfully launched application
+2026-07-08 18:00:29 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:00:29 [INFO] Page title verification passed
+2026-07-08 18:00:29 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:00:29 [INFO] URL verification passed
+2026-07-08 18:00:29 [INFO] Entering Username: locked_out_user
+2026-07-08 18:00:30 [INFO] Entering Password
+2026-07-08 18:00:31 [INFO] Clicking Login Button
+2026-07-08 18:00:32 [INFO] Login button clicked
+2026-07-08 18:01:03 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:01:06 [INFO] Successfully launched application
+2026-07-08 18:01:06 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:01:06 [INFO] Page title verification passed
+2026-07-08 18:01:06 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:01:06 [INFO] URL verification passed
+2026-07-08 18:01:06 [INFO] Entering Username: problem_user
+2026-07-08 18:01:07 [INFO] Entering Password
+2026-07-08 18:01:08 [INFO] Clicking Login Button
+2026-07-08 18:01:09 [INFO] Login button clicked
+2026-07-08 18:01:09 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:01:12 [INFO] Successfully launched application
+2026-07-08 18:01:12 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:01:12 [INFO] Page title verification passed
+2026-07-08 18:01:12 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:01:12 [INFO] URL verification passed
+2026-07-08 18:01:12 [INFO] Entering Username: performance_glitch_user
+2026-07-08 18:01:13 [INFO] Entering Password
+2026-07-08 18:01:14 [INFO] Clicking Login Button
+2026-07-08 18:01:21 [INFO] Login button clicked
+2026-07-08 18:01:21 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:01:23 [INFO] Successfully launched application
+2026-07-08 18:01:23 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:01:23 [INFO] Page title verification passed
+2026-07-08 18:01:23 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:01:23 [INFO] URL verification passed
+2026-07-08 18:01:23 [INFO] Entering Username: error_user
+2026-07-08 18:01:24 [INFO] Entering Password
+2026-07-08 18:01:25 [INFO] Clicking Login Button
+2026-07-08 18:01:26 [INFO] Login button clicked
+2026-07-08 18:01:27 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 18:01:29 [INFO] Successfully launched application
+2026-07-08 18:01:29 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 18:01:29 [INFO] Page title verification passed
+2026-07-08 18:01:29 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 18:01:29 [INFO] URL verification passed
+2026-07-08 18:01:29 [INFO] Entering Username: visual_user
+2026-07-08 18:01:30 [INFO] Entering Password
+2026-07-08 18:01:31 [INFO] Clicking Login Button
+2026-07-08 18:01:33 [INFO] Login button clicked
