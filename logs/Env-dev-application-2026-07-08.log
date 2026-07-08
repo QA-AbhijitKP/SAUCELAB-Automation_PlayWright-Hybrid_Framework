@@ -1,0 +1,126 @@
+2026-07-08 00:23:37 [INFO] Navigating to URL: undefined
+2026-07-08 00:23:48 [INFO] Navigating to URL: undefined
+2026-07-08 00:26:19 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:26:27 [INFO] Successfully launched application
+2026-07-08 00:26:27 [INFO] Entering Username: standard_user
+2026-07-08 00:26:28 [INFO] Entering Password
+2026-07-08 00:26:29 [INFO] Clicking Login Button
+2026-07-08 00:26:31 [INFO] Login button clicked
+2026-07-08 00:26:31 [INFO] Entering Username: standard_user
+2026-07-08 00:27:26 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:27:31 [INFO] Successfully launched application
+2026-07-08 00:27:31 [INFO] Entering Username: standard_user
+2026-07-08 00:27:33 [INFO] Entering Password
+2026-07-08 00:27:34 [INFO] Clicking Login Button
+2026-07-08 00:27:35 [INFO] Login button clicked
+2026-07-08 00:27:35 [INFO] Entering Username: standard_user
+2026-07-08 00:29:10 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:29:20 [INFO] Successfully launched application
+2026-07-08 00:29:20 [INFO] Entering Username: standard_user
+2026-07-08 00:29:23 [INFO] Entering Password
+2026-07-08 00:29:35 [INFO] Clicking Login Button
+2026-07-08 00:29:37 [INFO] Login button clicked
+2026-07-08 00:29:37 [INFO] Entering Username: standard_user
+2026-07-08 00:32:10 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:32:18 [INFO] Successfully launched application
+2026-07-08 00:32:18 [INFO] Entering Username: standard_user
+2026-07-08 00:32:21 [INFO] Entering Password
+2026-07-08 00:32:24 [INFO] Clicking Login Button
+2026-07-08 00:32:28 [INFO] Login button clicked
+2026-07-08 00:32:28 [INFO] Entering Username: standard_user
+2026-07-08 00:34:21 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:34:27 [INFO] Successfully launched application
+2026-07-08 00:34:27 [INFO] Entering Username: standard_user
+2026-07-08 00:34:28 [INFO] Entering Password
+2026-07-08 00:34:29 [INFO] Clicking Login Button
+2026-07-08 00:34:30 [INFO] Login button clicked
+2026-07-08 00:34:30 [INFO] Verifying successful login
+2026-07-08 00:34:30 [INFO] Login successful
+2026-07-08 00:34:30 [INFO] Verifying Product Page Title: Products
+2026-07-08 00:34:30 [INFO] Product Page Title verification passed
+2026-07-08 00:34:30 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html
+2026-07-08 00:34:30 [INFO] Product Page URL verification passed
+2026-07-08 00:34:30 [INFO] Attempting to add product: sauce-labs-backpack
+2026-07-08 00:34:31 [INFO] Product added successfully: sauce-labs-backpack
+2026-07-08 00:34:31 [INFO] Attempting to add product: sauce-labs-bike-light
+2026-07-08 00:34:32 [INFO] Product added successfully: sauce-labs-bike-light
+2026-07-08 00:34:32 [INFO] Attempting to add product: sauce-labs-bolt-t-shirt
+2026-07-08 00:34:34 [INFO] Product added successfully: sauce-labs-bolt-t-shirt
+2026-07-08 00:34:34 [INFO] Attempting to add product: sauce-labs-fleece-jacket
+2026-07-08 00:34:35 [INFO] Product added successfully: sauce-labs-fleece-jacket
+2026-07-08 00:34:35 [INFO] Attempting to add product: sauce-labs-onesie
+2026-07-08 00:34:36 [INFO] Product added successfully: sauce-labs-onesie
+2026-07-08 00:34:36 [INFO] Attempting to add product: test.allthethings()-t-shirt-(red)
+2026-07-08 00:34:37 [INFO] Product added successfully: test.allthethings()-t-shirt-(red)
+2026-07-08 00:34:37 [INFO] Verifying Cart Count: 6
+2026-07-08 00:34:37 [INFO] Cart Count verification passed
+2026-07-08 00:34:37 [INFO] Opening Shopping Cart
+2026-07-08 00:34:38 [INFO] Shopping Cart opened successfully
+2026-07-08 00:34:38 [INFO] Verifying Cart Page Title: Your Cart
+2026-07-08 00:34:38 [INFO] Cart Page Title verification passed
+2026-07-08 00:34:38 [INFO] Verifying Cart Page URL: https://www.saucedemo.com/cart.html
+2026-07-08 00:34:38 [INFO] Cart Page URL verification passed
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-backpack
+2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-backpack
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bike-light
+2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bike-light
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bolt-t-shirt
+2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bolt-t-shirt
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-fleece-jacket
+2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-fleece-jacket
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-onesie
+2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-onesie
+2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: test.allthethings()-t-shirt-(red)
+2026-07-08 00:34:38 [INFO] Product verified successfully: test.allthethings()-t-shirt-(red)
+2026-07-08 00:34:38 [INFO] Clicking Checkout button
+2026-07-08 00:34:40 [INFO] Navigated to Checkout Information Page
+2026-07-08 00:34:40 [INFO] Verifying Page Name: Checkout: Your Information
+2026-07-08 00:34:40 [INFO] Checkout Information Page Name verification passed
+2026-07-08 00:34:40 [INFO] Verifying URL: https://www.saucedemo.com/checkout-step-one.html
+2026-07-08 00:34:40 [INFO] Checkout Information URL verification passed
+2026-07-08 00:34:40 [INFO] Entering Checkout Information
+2026-07-08 00:34:40 [INFO] First Name: Abhijit
+2026-07-08 00:34:43 [INFO] Last Name: Patil
+2026-07-08 00:34:45 [INFO] Zip Code: 416516
+2026-07-08 00:34:46 [INFO] Checkout Information entered successfully
+2026-07-08 00:34:46 [INFO] Verifying all checkout fields contain values
+2026-07-08 00:34:46 [INFO] All checkout fields contain valid values
+2026-07-08 00:34:46 [INFO] Clicking Continue Button
+2026-07-08 00:34:47 [INFO] Navigated to Checkout Overview Page
+2026-07-08 00:34:47 [INFO] Verifying Checkout Overview Page Name: Checkout: Overview
+2026-07-08 00:34:47 [INFO] Checkout Overview Page Name verification passed
+2026-07-08 00:34:47 [INFO] Verifying Checkout Overview URL: https://www.saucedemo.com/checkout-step-two.html
+2026-07-08 00:34:47 [INFO] Checkout Overview URL verification passed
+2026-07-08 00:34:47 [INFO] Verifying Payment Information section
+2026-07-08 00:34:48 [INFO] Payment Information displayed successfully
+2026-07-08 00:34:48 [INFO] Verifying Shipping Information section
+2026-07-08 00:34:48 [INFO] Shipping Information displayed successfully
+2026-07-08 00:34:48 [INFO] Verifying Cost Details section
+2026-07-08 00:34:48 [INFO] Cost Details displayed successfully
+2026-07-08 00:34:48 [INFO] Validating Total Cost
+2026-07-08 00:34:48 [INFO] Item Total: 129.94
+2026-07-08 00:34:48 [INFO] Tax: 10.4
+2026-07-08 00:34:48 [INFO] Expected Total: 140.34
+2026-07-08 00:34:48 [INFO] Actual Total: 140.34
+2026-07-08 00:34:48 [INFO] Total Cost validation passed
+2026-07-08 00:34:48 [INFO] Clicking Finish Button
+2026-07-08 00:34:49 [INFO] Navigated to Checkout Complete Page
+2026-07-08 00:34:49 [INFO] Verifying Checkout Complete Page Name: Checkout: Complete!
+2026-07-08 00:34:49 [INFO] Checkout Complete Page Name verification passed
+2026-07-08 00:34:49 [INFO] Verifying Checkout Complete URL: https://www.saucedemo.com/checkout-complete.html
+2026-07-08 00:34:49 [INFO] Checkout Complete URL verification passed
+2026-07-08 00:34:49 [INFO] Verifying Order Confirmation Messages
+2026-07-08 00:34:49 [INFO] Order Confirmation Messages verified successfully
+2026-07-08 00:34:49 [INFO] Clicking Back Home Button
+2026-07-08 00:34:50 [INFO] Navigated back to Product Page
+2026-07-08 00:34:50 [INFO] Verifying Product Page Title: Products
+2026-07-08 00:34:50 [INFO] Product Page Title verification passed
+2026-07-08 00:34:50 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html
+2026-07-08 00:34:50 [INFO] Product Page URL verification passed
+2026-07-08 00:34:50 [INFO] Opening Hamburger Menu
+2026-07-08 00:34:51 [INFO] Clicking Logout option
+2026-07-08 00:34:53 [INFO] Successfully logged out from application
+2026-07-08 00:34:53 [INFO] Verifying Page Title: Swag Labs
+2026-07-08 00:34:53 [INFO] Page title verification passed
+2026-07-08 00:34:53 [INFO] Verifying URL: https://www.saucedemo.com/
+2026-07-08 00:34:53 [INFO] URL verification passed

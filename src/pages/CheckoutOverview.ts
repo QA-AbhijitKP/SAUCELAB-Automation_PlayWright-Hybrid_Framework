@@ -2,6 +2,7 @@ import {Page, Locator, expect} from '@playwright/test';
 import { CheckoutCompletePage } from './CheckoutCompletePage';
 import { CheckoutYourInformationPage } from './CheckoutYourInformationPage';
 import { ProductPage } from './ProductPage';
+import logger from '../logging/Logger';
 
 export class CheckoutOverviewPage{
 
@@ -50,81 +51,136 @@ export class CheckoutOverviewPage{
 
     }
 
-    async verifyPageName(expectedName:string){
+    
+    async verifyPageName(expectedName: string) {
+
+        logger.info(`Verifying Checkout Overview Page Name: ${expectedName}`);
+
         await expect(this.pageName).toHaveText(expectedName);
 
+        logger.info('Checkout Overview Page Name verification passed');
     }
+
+    
     
     async verifyCurrentURL(expectedURL: string) {
+
+        logger.info(`Verifying Checkout Overview URL: ${expectedURL}`);
+
         await expect(this.page).toHaveURL(expectedURL);
+
+        logger.info('Checkout Overview URL verification passed');
     }
+
     
-    async verifyPaymentInfoDisplayed(){
+    
+    async verifyPaymentInfoDisplayed() {
+
+        logger.info('Verifying Payment Information section');
+
         await expect(this.paymentInfo).toBeVisible();
         await expect(this.paymentInfoValue).toBeVisible();
+
+        logger.info('Payment Information displayed successfully');
     }
 
-    async verifyShippingInfoDisplayed(){
+
+    
+    async verifyShippingInfoDisplayed() {
+
+        logger.info('Verifying Shipping Information section');
+
         await expect(this.shippingInfo).toBeVisible();
         await expect(this.shippingInfoValue).toBeVisible();
+
+        logger.info('Shipping Information displayed successfully');
     }
 
-    async verifyCostDetailsDisplayed(){
+
+    
+    async verifyCostDetailsDisplayed() {
+
+        logger.info('Verifying Cost Details section');
+
         await expect(this.itemCost).toBeVisible();
-        
         await expect(this.taxCost).toBeVisible();
-        
         await expect(this.totalCost).toBeVisible();
-        
+
+        logger.info('Cost Details displayed successfully');
     }
-    
-    
+   
     
 
+    
     async validateTotalCost() {
-        // Extract values from UI
-        const itemTotalText = await this.page.locator('[data-test="subtotal-label"]').textContent();
-        const taxText = await this.page.locator('[data-test="tax-label"]').textContent();
-        const totalText = await this.page.locator('[data-test="total-label"]').textContent();
 
-        // Remove text and convert to numbers
-        const itemTotal = Number(itemTotalText?.replace('Item total: $', ''));
-        const tax = Number(taxText?.replace('Tax: $', ''));
-        const actualTotal = Number(totalText?.replace('Total: $', ''));
+        logger.info('Validating Total Cost');
 
-        // Calculate expected total
+        const itemTotalText = await this.page
+            .locator('[data-test="subtotal-label"]')
+            .textContent();
+
+        const taxText = await this.page
+            .locator('[data-test="tax-label"]')
+            .textContent();
+
+        const totalText = await this.page
+            .locator('[data-test="total-label"]')
+            .textContent();
+
+        const itemTotal = Number(
+            itemTotalText?.replace('Item total: $', '')
+        );
+
+        const tax = Number(
+            taxText?.replace('Tax: $', '')
+        );
+
+        const actualTotal = Number(
+            totalText?.replace('Total: $', '')
+        );
+
         const expectedTotal = itemTotal + tax;
 
-        // Validate
         expect(actualTotal).toBeCloseTo(expectedTotal, 2);
 
-        console.log(`Item Total: ${itemTotal}`);
-        console.log(`Tax: ${tax}`);
-        console.log(`Expected Total: ${expectedTotal}`);
-        console.log(`Actual Total: ${actualTotal}`);
+        logger.info(`Item Total: ${itemTotal}`);
+        logger.info(`Tax: ${tax}`);
+        logger.info(`Expected Total: ${expectedTotal}`);
+        logger.info(`Actual Total: ${actualTotal}`);
+
+        logger.info('Total Cost validation passed');
     }
 
 
     // Navigate pages
-
     
     async navigateToCheckoutCompletePage() {
+
+        logger.info('Clicking Finish Button');
+
         await expect(this.finishButton).toBeVisible();
+
         await this.finishButton.click();
+
+        logger.info('Navigated to Checkout Complete Page');
 
         return new CheckoutCompletePage(this.page);
     }
 
+    
+    async clickCancelButton() {
 
-    async clickCancelButton(){
-        
+        logger.info('Clicking Cancel Button');
+
         await expect(this.cancelButton).toBeVisible();
-        await this.cancelButton.click();
-        return new ProductPage(this.page);
-        
-    }
 
-   
+        await this.cancelButton.click();
+
+        logger.info('Navigated back to Product Page');
+
+        return new ProductPage(this.page);
+    }
 
 
 }

@@ -1,0 +1,7 @@
+2026-07-08 00:32:10 [INFO] Navigating to URL: https://www.saucedemo.com/
+2026-07-08 00:32:18 [INFO] Successfully launched application
+2026-07-08 00:32:18 [INFO] Entering Username: standard_user
+2026-07-08 00:32:21 [INFO] Entering Password
+2026-07-08 00:32:24 [INFO] Clicking Login Button
+2026-07-08 00:32:28 [INFO] Login button clicked
+2026-07-08 00:32:28 [INFO] Entering Username: standard_user

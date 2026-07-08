@@ -21,11 +21,17 @@ test('Sauace Lab: DEBUG Test', async ({ page }) => {
   const headerComponent= new HeaderComponent(page);
   const menuComponent= new MenuComponent(page);
 
+  
+  const username = process.env.APP_USERNAME!;
+  const password = process.env.PASSWORD!;
+  const URL = process.env.URL!;
+
+
   //  Login Page
   
-  await loginPage.gotoLoginPage();
+  await loginPage.gotoLoginPage(URL);
 
-  await loginPage.login("standard_user", "secret_sauce");
+  await loginPage.login(username, password);
 
 
 

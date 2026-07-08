@@ -23,11 +23,20 @@ test('Sauce Lab: End to End Test', async ({ page }) => {
 
   // Step 1: Navigate to Login Page
   
-  await loginPage.gotoLoginPage();
-  await loginPage.verifyPageTitle("Swag Labs");
+  const username = process.env.APP_USERNAME!;
+  const password = process.env.PASSWORD!;
+  const URL = process.env.URL!;
+
+
 
   // Step 2: Login with valid credentials
-  await loginPage.login("standard_user", "secret_sauce");
+
+   
+  await loginPage.gotoLoginPage(URL);
+
+  await loginPage.login(username, password);
+
+
 
   // Step 3: Verify successful login and redirection to the product page
   await loginPage.verifyLoginSuccess();

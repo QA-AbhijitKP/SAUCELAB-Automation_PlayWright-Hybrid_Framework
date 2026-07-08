@@ -1,11 +1,6 @@
 {
   "config": {
-    "argv": [
-      "C:\\Program Files\\nodejs\\node.exe",
-      "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\node_modules\\@playwright\\test\\cli.js",
-      "test",
-      "tests/featureDebug.spec.ts"
-    ],
+    "argv": [],
     "configFile": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\playwright.config.ts",
     "rootDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
     "failOnFlakyTests": false,
@@ -25,7 +20,7 @@
       {
         "outputDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/test-results",
         "repeatEach": 1,
-        "retries": 1,
+        "retries": 0,
         "metadata": {
           "actualWorkers": 1
         },
@@ -66,7 +61,7 @@
       [
         "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\node_modules\\Allure-Playwright\\dist\\cjs\\index.js",
         {
-          "outputFolder": "playwright-report/allure-results"
+          "outputFolder": "allure-results"
         }
       ]
     ],
@@ -77,20 +72,20 @@
     "shard": null,
     "tags": [],
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.61.0",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "featureDebug.spec.ts",
-      "file": "featureDebug.spec.ts",
+      "title": "end2EndTest.spec.ts",
+      "file": "end2EndTest.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Sauace Lab: DEBUG Test",
+          "title": "Sauce Lab: End to End Test",
           "ok": true,
           "tags": [],
           "tests": [
@@ -105,18 +100,307 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 37022,
+                  "duration": 34978,
                   "errors": [],
-                  "stdout": [],
+                  "stdout": [
+                    {
+                      "text": "2026-07-08 00:34:21 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:27 [INFO] Successfully launched application\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:27 [INFO] Entering Username: standard_user\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:28 [INFO] Entering Password\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:29 [INFO] Clicking Login Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Login button clicked\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Verifying successful login\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Login successful\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Verifying Product Page Title: Products\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Product Page Title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Product Page URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:30 [INFO] Attempting to add product: sauce-labs-backpack\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:31 [INFO] Product added successfully: sauce-labs-backpack\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:31 [INFO] Attempting to add product: sauce-labs-bike-light\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:32 [INFO] Product added successfully: sauce-labs-bike-light\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:32 [INFO] Attempting to add product: sauce-labs-bolt-t-shirt\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:34 [INFO] Product added successfully: sauce-labs-bolt-t-shirt\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:34 [INFO] Attempting to add product: sauce-labs-fleece-jacket\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:35 [INFO] Product added successfully: sauce-labs-fleece-jacket\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:35 [INFO] Attempting to add product: sauce-labs-onesie\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:36 [INFO] Product added successfully: sauce-labs-onesie\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:36 [INFO] Attempting to add product: test.allthethings()-t-shirt-(red)\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:37 [INFO] Product added successfully: test.allthethings()-t-shirt-(red)\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:37 [INFO] Verifying Cart Count: 6\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:37 [INFO] Cart Count verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:37 [INFO] Opening Shopping Cart\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Shopping Cart opened successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying Cart Page Title: Your Cart\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Cart Page Title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying Cart Page URL: https://www.saucedemo.com/cart.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Cart Page URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-backpack\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-backpack\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bike-light\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bike-light\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-bolt-t-shirt\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-bolt-t-shirt\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-fleece-jacket\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-fleece-jacket\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: sauce-labs-onesie\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: sauce-labs-onesie\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Verifying product displayed in cart: test.allthethings()-t-shirt-(red)\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Product verified successfully: test.allthethings()-t-shirt-(red)\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:38 [INFO] Clicking Checkout button\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Navigated to Checkout Information Page\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Verifying Page Name: Checkout: Your Information\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Checkout Information Page Name verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Verifying URL: https://www.saucedemo.com/checkout-step-one.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Checkout Information URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] Entering Checkout Information\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:40 [INFO] First Name: Abhijit\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:43 [INFO] Last Name: Patil\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:45 [INFO] Zip Code: 416516\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:46 [INFO] Checkout Information entered successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:46 [INFO] Verifying all checkout fields contain values\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:46 [INFO] All checkout fields contain valid values\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:46 [INFO] Clicking Continue Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Navigated to Checkout Overview Page\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Verifying Checkout Overview Page Name: Checkout: Overview\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Checkout Overview Page Name verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Verifying Checkout Overview URL: https://www.saucedemo.com/checkout-step-two.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Checkout Overview URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:47 [INFO] Verifying Payment Information section\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Payment Information displayed successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Verifying Shipping Information section\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Shipping Information displayed successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Verifying Cost Details section\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Cost Details displayed successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Validating Total Cost\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Item Total: 129.94\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Tax: 10.4\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Expected Total: 140.34\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Actual Total: 140.34\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Total Cost validation passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:48 [INFO] Clicking Finish Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Navigated to Checkout Complete Page\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Verifying Checkout Complete Page Name: Checkout: Complete!\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Checkout Complete Page Name verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Verifying Checkout Complete URL: https://www.saucedemo.com/checkout-complete.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Checkout Complete URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Verifying Order Confirmation Messages\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Order Confirmation Messages verified successfully\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:49 [INFO] Clicking Back Home Button\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Navigated back to Product Page\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Verifying Product Page Title: Products\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Product Page Title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Verifying Product Page URL: https://www.saucedemo.com/inventory.html\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Product Page URL verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:50 [INFO] Opening Hamburger Menu\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:51 [INFO] Clicking Logout option\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:53 [INFO] Successfully logged out from application\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:53 [INFO] Verifying Page Title: Swag Labs\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:53 [INFO] Page title verification passed\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:53 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
+                    },
+                    {
+                      "text": "2026-07-08 00:34:53 [INFO] URL verification passed\r\n"
+                    }
+                  ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-02T18:35:31.575Z",
+                  "startTime": "2026-07-07T19:04:15.839Z",
                   "annotations": [],
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\featureDebug-Sauace-Lab-DEBUG-Test-chrome\\test-finished-1.png"
+                      "path": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\test-results\\end2EndTest-Sauce-Lab-End-to-End-Test-chrome\\test-finished-1.png"
                     }
                   ]
                 }
@@ -124,8 +408,8 @@
               "status": "expected"
             }
           ],
-          "id": "092cc6e271af9b407205-a970650f5ff78e025cc1",
-          "file": "featureDebug.spec.ts",
+          "id": "a69ed6b45690ea2bcbab-47a4c5a751752c41e8b1",
+          "file": "end2EndTest.spec.ts",
           "line": 12,
           "column": 5
         }
@@ -134,8 +418,8 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-07-02T18:35:27.675Z",
-    "duration": 43722.76,
+    "startTime": "2026-07-07T19:04:10.453Z",
+    "duration": 43428.171,
     "expected": 1,
     "skipped": 0,
     "unexpected": 0,

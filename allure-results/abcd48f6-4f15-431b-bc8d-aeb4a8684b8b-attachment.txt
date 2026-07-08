@@ -1,0 +1,4 @@
+Running test with environment: undefined
+URL: https://www.saucedemo.com/
+USERNAME: apatil70
+PASSWORD: secret_sauce

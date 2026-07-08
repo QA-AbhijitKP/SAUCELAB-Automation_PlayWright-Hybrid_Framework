@@ -1,0 +1,4 @@
+Running test with environment: undefined
+URL: undefined
+USERNAME: apatil70
+PASSWORD: undefined

@@ -1,0 +1,4 @@
+Running test with environment: dev
+URL: https://www.saucedemo.com/
+USERNAME: standard_user
+PASSWORD: undefined

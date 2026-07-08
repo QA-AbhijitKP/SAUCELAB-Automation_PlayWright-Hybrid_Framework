@@ -1,0 +1,4 @@
+Running test with environment: reg
+URL: https://www.saucedemo.com/
+USERNAME: error_user
+PASSWORD: secret_sauce

@@ -1,0 +1,4 @@
+Item Total: 29.99
+Tax: 2.4
+Expected Total: 32.39
+Actual Total: 32.39
