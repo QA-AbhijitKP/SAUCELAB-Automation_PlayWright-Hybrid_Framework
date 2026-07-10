@@ -1,0 +1,13 @@
+username, password, expected, run
+standard_user, secret_sauce, success, true
+locked_out_user, secret_sauce, success, false
+problem_user, secret_sauce, success, true
+performance_glitch_user, secret_sauce, success, true
+error_user, secret_sauce, success, true
+visual_user, secret_sauce, success, true
+User123, Password123, error, true
+standard_user, parul123, error, true
+User123, secret_sauce, error, true
+, , error, true
+
+
