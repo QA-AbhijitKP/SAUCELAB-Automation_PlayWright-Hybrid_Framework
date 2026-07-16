@@ -19,6 +19,26 @@
             "date": 1783688199892,
             "name": "logs\\Env-dev-error-2026-07-10.log",
             "hash": "1171574207babcb2e6116322dfa9a5d1974138131cdbb9b0845acccc22f70f94"
+        },
+        {
+            "date": 1783923743813,
+            "name": "logs\\Env-dev-error-2026-07-13.log",
+            "hash": "96cbdc56dfb289a44047707f953fff9d1adc2f33d56ccdcf1d228369524be062"
+        },
+        {
+            "date": 1783968251427,
+            "name": "logs\\Env-dev-error-2026-07-14.log",
+            "hash": "116dc4ddfac7f71ca5e6361411b7340701cd589ce6c20ee2e9dd7da3be5c280a"
+        },
+        {
+            "date": 1784097400207,
+            "name": "logs\\Env-dev-error-2026-07-15.log",
+            "hash": "f3188819fd13d4a852a633a50de28498896e41104f6121b6256d3bb4e0143cf0"
+        },
+        {
+            "date": 1784200205615,
+            "name": "logs\\Env-dev-error-2026-07-16.log",
+            "hash": "29960597ba2e2cdedc5be2cdc96678a7376a2990736bd62587add77757951750"
         }
     ],
     "hashType": "sha256"

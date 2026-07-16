@@ -23,57 +23,40 @@ export class LoginPage {
 
     async gotoLoginPage(url: string) {
         logger.info(`Navigating to URL: ${url}`);
-
         await this.page.goto(url);
-
         logger.info('Successfully launched application');
     }
 
     async verifyCurrentURL(expectedURL: string) {
-
         logger.info(`Verifying URL: ${expectedURL}`);
-
         await expect(this.page).toHaveURL(expectedURL);
-
         logger.info('URL verification passed');
     }
 
     async verifyPageTitle(expectedpageTitle: string) {
-
         logger.info(`Verifying Page Title: ${expectedpageTitle}`);
-
         await expect(this.page).toHaveTitle(expectedpageTitle);
-
         logger.info('Page title verification passed');
     }
 
     async login(username: string, password: string) {
-
         logger.info(`Entering Username: ${username}`);
-
         await this.username.fill(username);
 
         logger.info('Entering Password');
-
         await this.password.fill(password);
 
         logger.info('Clicking Login Button');
-
         await this.loginButton.click();
-
         logger.info('Login button clicked');
     }
 
     async verifyLoginSuccess() {
 
         logger.info('Verifying successful login');
+        await expect(this.page).toHaveURL('https://www.saucedemo.com/inventory.html');
 
-        await expect(this.page).toHaveURL(
-            'https://www.saucedemo.com/inventory.html'
-        );
-
-        logger.info('Login successful');
-
+        logger.info('Login successful'); 
         return new ProductPage(this.page);
     }
 
