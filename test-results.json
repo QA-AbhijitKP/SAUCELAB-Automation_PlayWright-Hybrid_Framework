@@ -1,8 +1,8 @@
 {
   "config": {
     "argv": [],
-    "configFile": "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\playwright.config.ts",
-    "rootDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
+    "configFile": "C:\\Users\\abhik\\Automation Drive\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\playwright.config.ts",
+    "rootDir": "C:/Users/abhik/Automation Drive/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
     "failOnFlakyTests": false,
     "forbidOnly": false,
     "fullyParallel": true,
@@ -18,7 +18,7 @@
     "preserveOutput": "always",
     "projects": [
       {
-        "outputDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/test-results",
+        "outputDir": "C:/Users/abhik/Automation Drive/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -26,7 +26,7 @@
         },
         "id": "chrome",
         "name": "chrome",
-        "testDir": "C:/Users/apatil70/Automation_TS/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
+        "testDir": "C:/Users/abhik/Automation Drive/Automation Framework/SAUCELAB-Automation_PlayWright-Hybrid_Framework/src/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -59,7 +59,7 @@
         null
       ],
       [
-        "C:\\Users\\apatil70\\Automation_TS\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\node_modules\\Allure-Playwright\\dist\\cjs\\index.js",
+        "C:\\Users\\abhik\\Automation Drive\\Automation Framework\\SAUCELAB-Automation_PlayWright-Hybrid_Framework\\node_modules\\Allure-Playwright\\dist\\cjs\\index.js",
         {
           "outputFolder": "allure-results"
         }
@@ -73,19 +73,19 @@
     "tags": [],
     "updateSnapshots": "missing",
     "updateSourceMethod": "3way",
-    "version": "1.61.0",
+    "version": "1.61.1",
     "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "fixtureTest.spec.ts",
-      "file": "fixtureTest.spec.ts",
+      "title": "annotations.spec.ts",
+      "file": "annotations.spec.ts",
       "column": 0,
       "line": 0,
       "specs": [
         {
-          "title": "Sauce Lab: DEBUG Fixture Test",
+          "title": "Test 4",
           "ok": true,
           "tags": [],
           "tests": [
@@ -97,160 +97,15 @@
               "projectName": "chrome",
               "results": [
                 {
-                  "workerIndex": 5,
+                  "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 25608,
+                  "duration": 2,
                   "errors": [],
-                  "stdout": [
-                    {
-                      "text": "2026-07-16 17:19:21 [INFO] Navigating to URL: https://www.saucedemo.com/\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:23 [INFO] Successfully launched application\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:23 [INFO] Entering Username: standard_user\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:24 [INFO] Entering Password\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:25 [INFO] Clicking Login Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:27 [INFO] Login button clicked\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:27 [INFO] Attempting to add product: sauce-labs-backpack\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:28 [INFO] Product added successfully: sauce-labs-backpack\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:28 [INFO] Opening Shopping Cart\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:29 [INFO] Shopping Cart opened successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:29 [INFO] Clicking Checkout button\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:30 [INFO] Navigated to Checkout Information Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:35 [INFO] Entering Checkout Information\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:35 [INFO] First Name: Abhijit\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:38 [INFO] Last Name: Patil\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:40 [INFO] Zip Code: 416516\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:41 [INFO] Checkout Information entered successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:41 [INFO] Clicking Continue Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Navigated to Checkout Overview Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Verifying Checkout Overview Page Name: Checkout: Overview\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Checkout Overview Page Name verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Verifying Checkout Overview URL: https://www.saucedemo.com/checkout-step-two.html\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Checkout Overview URL verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Verifying Payment Information section\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Payment Information displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Verifying Shipping Information section\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Shipping Information displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Verifying Cost Details section\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Cost Details displayed successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Validating Total Cost\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Item Total: 29.99\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Tax: 2.4\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Expected Total: 32.39\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Actual Total: 32.39\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Total Cost validation passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:42 [INFO] Clicking Finish Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:43 [INFO] Navigated to Checkout Complete Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:43 [INFO] Verifying Order Confirmation Messages\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:43 [INFO] Order Confirmation Messages verified successfully\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:43 [INFO] Clicking Back Home Button\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:44 [INFO] Navigated back to Product Page\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:44 [INFO] Opening Hamburger Menu\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:46 [INFO] Clicking Logout option\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:47 [INFO] Successfully logged out from application\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:47 [INFO] Verifying Page Title: Swag Labs\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:47 [INFO] Page title verification passed\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:47 [INFO] Verifying URL: https://www.saucedemo.com/\r\n"
-                    },
-                    {
-                      "text": "2026-07-16 17:19:47 [INFO] URL verification passed\r\n"
-                    }
-                  ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-07-16T11:49:21.485Z",
+                  "startTime": "2026-07-18T09:07:53.455Z",
                   "annotations": [],
                   "attachments": []
                 }
@@ -258,19 +113,143 @@
               "status": "expected"
             }
           ],
-          "id": "2306cc3af25de8db2493-f63b001c68a2877a2c9a",
-          "file": "fixtureTest.spec.ts",
-          "line": 4,
-          "column": 5
+          "id": "b24767b8199df0caea11-877505bea5fba6f5065c",
+          "file": "annotations.spec.ts",
+          "line": 22,
+          "column": 6
+        }
+      ],
+      "suites": [
+        {
+          "title": "Test Describe annotation Validation - only",
+          "file": "annotations.spec.ts",
+          "line": 30,
+          "column": 15,
+          "specs": [
+            {
+              "title": "Test 1",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 0,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Login Page Title and URL are verified successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T09:07:53.502Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b24767b8199df0caea11-fe7942f82c39b903cc9c",
+              "file": "annotations.spec.ts",
+              "line": 31,
+              "column": 7
+            },
+            {
+              "title": "Test 2",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Login Page Title and URL are verified successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T09:07:53.518Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b24767b8199df0caea11-4bd5ae846c084484b73c",
+              "file": "annotations.spec.ts",
+              "line": 35,
+              "column": 7
+            },
+            {
+              "title": "Test 3",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 90000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chrome",
+                  "projectName": "chrome",
+                  "results": [
+                    {
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 1,
+                      "errors": [],
+                      "stdout": [
+                        {
+                          "text": "Login Page Title and URL are verified successfully\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-07-18T09:07:53.539Z",
+                      "annotations": [],
+                      "attachments": []
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "b24767b8199df0caea11-4fbe894f81a163aeac9c",
+              "file": "annotations.spec.ts",
+              "line": 39,
+              "column": 7
+            }
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-07-16T11:49:19.076Z",
-    "duration": 28228.701000005007,
-    "expected": 1,
+    "startTime": "2026-07-18T09:07:52.392Z",
+    "duration": 1193.4179999999997,
+    "expected": 4,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

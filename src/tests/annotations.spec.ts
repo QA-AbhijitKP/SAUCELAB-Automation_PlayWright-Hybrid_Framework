@@ -1,129 +1,103 @@
-import { expect, test } from '@playwright/test';
-import { LoginPage } from '../pages/LoginPage';
-const URL = process.env.URL!;
+import { test } from '@playwright/test';
 
-// test.describe-
 
+//-----------------------------------------------------------------------------------------------------------------------------
+// test.describe
 test.describe('Test Describe annotation Validation', () => {
+  test('Test 1', async ({  }) => {
+    // your test logic here
+  });
 
-    test('Test 1', async ({ page }) => {
+  test('Test 2', async ({  }) => {
+    // your test logic here
+  });
 
-    });
-
-    test('Test 2', async ({ page }) => {
-
-    });
-
-    test('Test 3', async ({ page }) => {
-
-    });
-
+  test('Test 3', async ({  }) => {
+    // your test logic here
+  });
 });
 
 //-----------------------------------------------------------------------------------------------------------------------------
-
-// test-only
-
-test.only('Test 4',  () => {
-
+// test.only
+test.only('Test 4', async ({  }) => {
+  // runs only this test
 });
 
-test('Test 5', () => {
-   // test.only();
-
+test('Test 5', async ({  }) => {
+  // normal test
 });
-
 
 test.describe.only('Test Describe annotation Validation - only', () => {
+  test('Test 1', async () => {
+    console.log('Login Page Title and URL are verified successfully');
+  });
 
-    test('Test 1', async () => {
-        console.log('Login Page Title and URL are verified successfully');
-        
-    });
+  test('Test 2', async () => {
+    console.log('Login Page Title and URL are verified successfully');
+  });
 
-    test('Test 2', async () => {
-        console.log('Login Page Title and URL are verified successfully');
-        
-    });
-
-    test('Test 3', async () => {
-        console.log('Login Page Title and URL are verified successfully');
-        
-    });
-
+  test('Test 3', async () => {
+    console.log('Login Page Title and URL are verified successfully');
+  });
 });
 
 //-----------------------------------------------------------------------------------------------------------------------------
-
-// Test- Skip annotation- Skip test
-test.skip('login page Validation', async ({ page }) => {
-  
+// test.skip
+test.skip('login page Validation', async ({  }) => {
+  // skipped test
 });
 
-test('login page Validation2', async ({ page }) => {
-    test.skip();
-   
+test.skip('login page Validation2', async ({  }) => {
+  // skipped test
 });
 
 //-----------------------------------------------------------------------------------------------------------------------------
-// test.fixme annotation- Known issue, don't run
+// test.fixme
 test.fixme('login Test with valid Credentials', async () => {
-    
+  // marked as fixme, won’t run
 });
 
-test('login Test with valid Credentials2', async () => {
-    test.fixme();
-    
-});
-
-
-//-----------------------------------------------------------------------------------------------------------------------------
-
-//test.setTimeout annotation-
-test('login Test with invalid Credentials', async ({ page }) => {
-    test.setTimeout(3000);    
-});
-
-
-//-----------------------------------------------------------------------------------------------------------------------------
-
-// test.fail annotation- Expected to fail
-test.fail('login Test with invalid Username', async ({ page }) => {
-        
-});
-
-test('login Test with invalid Username2', async ({ page }) => {
-    test.fail();        
+test.fixme('login Test with valid Credentials2', async () => {
+  // marked as fixme, won’t run
 });
 
 //-----------------------------------------------------------------------------------------------------------------------------
-
-// test.slow Annotations- Triple timeout
-
-// Single test as slow-
-test('login Test with invalid Password', async ({ page }) => {
-    test.slow();        
+// test.setTimeout
+test('login Test with invalid Credentials', async () => {
+  test.setTimeout(3000);
+  // test logic
 });
 
-// Conditional slow-
-test('mobile test', async ({ page, browserName }) => {
+//-----------------------------------------------------------------------------------------------------------------------------
+// test.fail
+test.fail('login Test with invalid Username', async () => {
+  // expected to fail
+});
+
+test('login Test with invalid Username2', async () => {
+  test.fail();
+  // expected to fail
+});
+
+//-----------------------------------------------------------------------------------------------------------------------------
+// test.slow
+test('login Test with invalid Password', async () => {
+  test.slow();
+  // test logic
+});
+
+test('mobile test', async ({ browserName }: { browserName: string }) => {
   test.slow(browserName === 'webkit', 'WebKit is slower');
+  // test logic
 });
 
-// callback slow-
 test.describe('Report Generation', () => {
-        test.slow();
+  test.slow();
+  test('generate report', async () => {
+    // ...
+  });
 
-        test('generate report', async ({ page }) => {
-            // ...
-        });
-
-        test('download report', async ({ page }) => {
-            // ...
-        });
+  test('download report', async () => {
+    // ...
+  });
 });
-
-
-
-//-----------------------------------------------------------------------------------------------------------------------------
-
